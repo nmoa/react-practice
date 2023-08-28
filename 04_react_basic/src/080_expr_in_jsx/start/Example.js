@@ -3,7 +3,7 @@ import Expression from "./components/Expression";
 
 const Example = () => (
     <>
-        <Child />
+        <Child color="red" />
         <Expression />
     </>
 );
