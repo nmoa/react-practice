@@ -4,7 +4,7 @@ const Example = () => {
   const orderObj = { item: 'apple', count: 10 };
   const [order, setOrder] = useState(orderObj);
   const changeItem = (e) => {
-    setOrder({ ...order, item: e.target.value })
+    setOrder({ ...order, item: e.target.value }) // スプレッド演算子でオブジェクトを展開して、新しいオブジェクトを作る必要がある
   };
   const countUp = () => {
     setOrder({ ...order, count: order.count + 1 })
